@@ -17,6 +17,9 @@ public class Institut {
     public void afegirEstudiant(Estudiant estudiant){
         persones.add(estudiant);
     }
+    public void afegirSubstitut(Substitut substitut){
+        persones.add(substitut);
+    }
     public void imprimirInformacio (){
         for (int i =0; i<persones.size(); i++){
             String dades = persones.get(i).obtenirDades();

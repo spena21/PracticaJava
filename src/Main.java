@@ -11,13 +11,13 @@ public class Main {
 
         Estudiant e =new Estudiant();
         e.posarNota(7.5);
-        e.setNom("Marc");
+        e.setNom("Joan");
        // dades = e.obtenirDades();
        // System.out.println(dades);
 
         Profesor pr = new Profesor();
-        pr.setSou(3500);
-        pr.setNom("Marc");
+        pr.setSou(2500);
+        pr.setNom("Sheila");
         pr.setDni("456789264P");
       // dades = pr.obtenirDades();
        // System.out.println(dades);
@@ -32,10 +32,10 @@ public class Main {
         //System.out.println(dades);
 
         Institut institut= new Institut();
+        institut.afegirPersona(p1);
         institut.afegirEstudiant(e);
         institut.afegirProfesor(pr);
-        institut.afegirPersona(p1);
-        institut.afegirPersona(p2);
+        institut.afegirSubstitut(s);
         institut.imprimirInformacio();
 
     }
