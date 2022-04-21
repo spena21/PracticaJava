@@ -16,6 +16,7 @@ public class Persona {
     public String obtenirDades() {
         return "Persona que es diu " + this.nom + " amb dni " + this.dni;
     }
+
     public void setDni(String dni) {
         if (this.dni == null) {
             this.dni = dni;
