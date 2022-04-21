@@ -1,3 +1,4 @@
+import java.util.Date;
 public class Main {
 
     public static void main(String[] args) {
@@ -26,8 +27,10 @@ public class Main {
         s.setDni("45383937D");
         s.setNom("Maria");
         s.setSou(1500);
-        s.setDataInici("10/04/2022");
-        s.setDataFi("30/06/2022");
+        Date dataInici = new Date(2022,04,10);
+        Date dataFi = new Date(2022,06,30);
+        s.setDataInici(dataInici);
+        s.setDataFi(dataFi);
        // dades = s.obtenirDades();
         //System.out.println(dades);
 

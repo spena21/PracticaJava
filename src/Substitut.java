@@ -1,12 +1,14 @@
-public class Substitut extends Profesor{
-    private String dataInici;
-    private String dataFi;
+import java.util.Date;
 
-    public void setDataFi(String dataFi) {
+public class Substitut extends Profesor{
+    private Date dataInici;
+    private Date dataFi;
+
+    public void setDataFi(Date dataFi) {
         this.dataFi = dataFi;
     }
 
-    public void setDataInici(String dataInici) {
+    public void setDataInici(Date dataInici) {
         this.dataInici = dataInici;
     }
 
