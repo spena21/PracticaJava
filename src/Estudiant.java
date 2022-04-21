@@ -5,10 +5,20 @@ public class Estudiant extends Persona {
 
     };
     public void posarNota(double nota){
-        this.nota = nota;
+        if (nota > 0 && nota <10) {
+            this.nota = nota;
+        }
+        else {
+            System.out.println("La nota no es correcta");
+        }
     }
     public String obtenirDades(){
         //vull que em doni el mateix que persona + la nota
-        return super.obtenirDades() + " te un " + this.nota;
+        if (super.obtenirDades() == "Dades de la persona incompletes" ){
+            return "Dades de la persona incompletes";
+        }
+        else {
+            return super.obtenirDades() + " te un " + this.nota;
+        }
     }
 }

@@ -14,8 +14,14 @@ public class Persona {
     }
     //aquesta funció obtindrà les dades
     public String obtenirDades() {
-        return "Persona que es diu " + this.nom + " amb dni " + this.dni;
+        if (this.nom == null || this.dni == null){
+            return "Dades de la persona incompletes";
+        }
+        else {
+            return "Persona que es diu " + this.nom + " amb dni " + this.dni;
+        }
     }
+
 
     public void setDni(String dni) {
         if (this.dni == null) {

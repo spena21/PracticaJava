@@ -6,21 +6,21 @@ public class Main {
 
         p1.setNom("Marc");
         p1.setDni("XXXXXXXXX");
-        String dades =p1.obtenirDades();
-        System.out.println(dades);
+       // String dades =p1.obtenirDades();
+       // System.out.println(dades);
 
         Estudiant e =new Estudiant();
         e.posarNota(7.5);
         e.setNom("Marc");
-        dades = e.obtenirDades();
-        System.out.println(dades);
+       // dades = e.obtenirDades();
+       // System.out.println(dades);
 
         Profesor pr = new Profesor();
         pr.setSou(3500);
         pr.setNom("Marc");
         pr.setDni("456789264P");
-        dades = pr.obtenirDades();
-        System.out.println(dades);
+      // dades = pr.obtenirDades();
+       // System.out.println(dades);
 
         Substitut s = new Substitut();
         s.setDni("45383937D");
@@ -28,8 +28,15 @@ public class Main {
         s.setSou(1500);
         s.setDataInici("10/04/2022");
         s.setDataFi("30/06/2022");
-        dades = s.obtenirDades();
-        System.out.println(dades);
+       // dades = s.obtenirDades();
+        //System.out.println(dades);
+
+        Institut institut= new Institut();
+        institut.afegirEstudiant(e);
+        institut.afegirProfesor(pr);
+        institut.afegirPersona(p1);
+        institut.afegirPersona(p2);
+        institut.imprimirInformacio();
 
     }
 }
