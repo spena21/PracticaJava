@@ -16,7 +16,7 @@ public class Main {
         System.out.println(dades);
 
         Profesor pr = new Profesor();
-        pr.setSou(1100);
+        pr.setSou(3500);
         pr.setNom("Marc");
         pr.setDni("456789264P");
         dades = pr.obtenirDades();

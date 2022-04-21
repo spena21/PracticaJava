@@ -4,7 +4,13 @@ public class Profesor extends Persona {
     private double sou;
 
     public void setSou(double sou) {
-        this.sou = sou;
+        if (sou < 3000 && sou > 0) {
+            this.sou= sou;
+        }
+
+        else {
+            System.out.println ("El sou no es correcte");
+        }
     }
 
     public String obtenirDades(){
