@@ -13,9 +13,9 @@ public class Persona {
         this.nom = nom;
     }
     //aquesta funció obtindrà les dades
-    public String obtenirDades() {
+    public String obtenirDades() throws Exception {
         if (this.nom == null || this.dni == null){
-            return "Dades de la persona incompletes";
+            throw new Exception("Dades de la persona incompletes");
         }
         else {
             return "Persona que es diu " + this.nom + " amb dni " + this.dni;
@@ -23,12 +23,12 @@ public class Persona {
     }
 
 
-    public void setDni(String dni) {
+    public void setDni(String dni) throws Exception {
         if (this.dni == null) {
             this.dni = dni;
         }
         else {
-            System.out.println("Aquesta persona ja te un dni assignat");
+            throw new Exception("Aquesta persona ja te un dni assignat");
         }
     }
 }

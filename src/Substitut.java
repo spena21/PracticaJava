@@ -12,7 +12,7 @@ public class Substitut extends Profesor{
         this.dataInici = dataInici;
     }
 
-    public String obtenirDades() {
+    public String obtenirDades() throws Exception {
         return super.obtenirDades() + " amb data de inici: " + this.dataInici + " i data final: " + this.dataFi;
     }
 }

@@ -11,16 +11,7 @@ public class Institut {
     public void afegirPersona(Persona persona) {
         persones.add(persona);
     }
-    public void afegirProfesor(Profesor professor) {
-        persones.add(professor);
-    }
-    public void afegirEstudiant(Estudiant estudiant){
-        persones.add(estudiant);
-    }
-    public void afegirSubstitut(Substitut substitut){
-        persones.add(substitut);
-    }
-    public void imprimirInformacio (){
+    public void imprimirInformacio () throws Exception {
         for (int i =0; i<persones.size(); i++){
             String dades = persones.get(i).obtenirDades();
             System.out.println(dades);

@@ -1,7 +1,7 @@
 import java.util.Date;
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Persona p1 = new Persona(); //això és una instancia de persona, podem crear les que volguem
         Persona p2 = new Persona();
 
@@ -12,7 +12,10 @@ public class Main {
 
         Estudiant e =new Estudiant();
         e.posarNota(7.5);
+        e.posarNota(8.0);
+        e.setDni("XXXXXXXXX");
         e.setNom("Joan");
+     //   System.out.println(e.obtenirMitjana());
        // dades = e.obtenirDades();
        // System.out.println(dades);
 
@@ -36,9 +39,9 @@ public class Main {
 
         Institut institut= new Institut();
         institut.afegirPersona(p1);
-        institut.afegirEstudiant(e);
-        institut.afegirProfesor(pr);
-        institut.afegirSubstitut(s);
+        institut.afegirPersona(e);
+        institut.afegirPersona(pr);
+        institut.afegirPersona(s);
         institut.imprimirInformacio();
 
     }

@@ -3,17 +3,17 @@ public class Profesor extends Persona {
     }
     private double sou;
 
-    public void setSou(double sou) {
+    public void setSou(double sou) throws Exception {
         if (sou < 3000 && sou > 0) {
             this.sou= sou;
         }
 
         else {
-            System.out.println ("El sou no es correcte");
+            throw new Exception("El sou no es correcte");
         }
     }
 
-    public String obtenirDades(){
+    public String obtenirDades() throws Exception {
         return super.obtenirDades() + " amb sou: " + this.sou;
     }
 }
